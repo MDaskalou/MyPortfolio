@@ -1,0 +1,140 @@
+﻿@media (max-width: 768px) {
+    /* HEADER */
+    .header {
+        flex-direction: column;
+        padding: 15px 5%;
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        margin: 10px;
+    }
+
+    /* HOME */
+    .home {
+        flex-direction: column;
+        height: auto;
+        padding: 60px 5%;
+        text-align: center;
+    }
+
+    .home-content {
+        max-width: 100%;
+    }
+
+    .home-content h1 {
+        font-size: 40px;
+    }
+
+    .home-content h3 {
+        font-size: 24px;
+    }
+
+    .home-content p {
+        font-size: 16px;
+    }
+
+    .profile-img img {
+        width: 250px;
+        height: 250px;
+        margin-top: 20px;
+    }
+
+    /* ABOUT */
+    .about-wrapper {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .about-content {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .about-content h2 {
+        font-size: 40px;
+    }
+
+    .about-content h4 {
+        font-size: 20px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+
+    .about-img {
+        justify-content: center;
+    }
+
+    .about-profile-img {
+        width: 250px;
+        height: 250px;
+    }
+
+    /* SERVICES */
+    .services-list {
+        grid-template-columns: 1fr;
+    }
+
+    /* SKILLS */
+    .container1 {
+        padding: 30px;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .heading1 {
+        font-size: 28px;
+    }
+
+    .bar {
+        font-size: 16px;
+    }
+
+    /* PORTFOLIO */
+    .main-text h2 {
+        font-size: 36px;
+    }
+
+    .portfolio-content {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+
+    /* CONTACT */
+    .contact {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .contact-text h2 {
+        font-size: 36px;
+    }
+
+    .contact-text p,
+    .contact-text h4 {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .contact-icon {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .contact-form {
+        max-width: 100%;
+    }
+}

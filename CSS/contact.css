@@ -1,0 +1,125 @@
+﻿.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    padding: 30px;
+    margin-top: 130px;
+    align-items: start;
+}
+
+.contact-text h2 {
+    font-size: 90px;
+    line-height: 1;
+    text-align: center;
+}
+
+.contact-text h2 span {
+    color: #0ef;
+}
+
+.contact-text h4 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: rgb(228, 228, 228);
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.contact-text p {
+    max-width: 550px;
+    font-size: 18px;
+    line-height: 30px;
+    color: rgb(228, 228, 228);
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact-form .send {
+    background-color: #0ef;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+
+.contact-form .send:hover {
+    background-color: #00c9c8;
+}
+
+.contact-icon {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.contact-icon a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    transition: 0.5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s * var(--i));
+    margin: 30px 10px 30px 0;
+}
+
+.contact-icon a i {
+    transition: transform 0.3s ease;
+}
+
+.contact-icon a:hover {
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+}
+
+.contact-icon a:hover i {
+    transform: scale(1.2);
+}
+
+.contact-list {
+    margin-bottom: 3rem;
+}
+
+.contact-list li {
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.4s ease;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contact-list li:hover {
+    transform: scale(1.01) translateY(-5px);
+    color: #00c9c8;
+}

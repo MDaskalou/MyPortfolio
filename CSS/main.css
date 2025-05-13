@@ -1,0 +1,15 @@
+﻿ 
+
+/*├─ main.css  # Innehåller bara @import och globala regler*/
+
+
+@import url('./Base.css');
+@import url('./Layout.css');
+@import url('./home.css');
+@import url('./about.css');
+@import url('./services.css');
+@import url('./skills.css');
+@import url('./animation.css');
+@import url('./portfolio.css');
+@import url('./contact.css');
+@import url('./responsive.css');
