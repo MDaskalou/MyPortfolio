@@ -1,8 +1,12 @@
-﻿#services {
+﻿#skills {
     color: aliceblue;
     font-size: 20px;
     line-height: 1.4;
     margin-bottom: 4rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .sub-title {
@@ -12,21 +16,36 @@
 }
 
 .sub-title span {
+    font-size: 60px;
     color: #0ef;
+    text-align: center;
+    padding-bottom: 70px;
+
+
 }
 
 .container {
-    padding: 90px;
+    max-width: 1200px;
+    padding: 0 20px;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
 }
 
-.services-list {
+
+.skill-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
-    grid-gap: 40px;
+    grid-template-columns: repeat(3, 1fr); /* exakt 3 kolumner */
+    gap: 30px;
     margin-top: 50px;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
+    text-align: center;
 }
 
-.services-list div {
+
+.skill-list div {
     background: transparent;
     padding: 40px;
     font-size: 13px;
@@ -38,7 +57,7 @@
     1px 1px 40px #0053b8f7;
 }
 
-.services-list div:hover {
+.skill-list div:hover {
     transform: translateY(-10px);
     box-shadow: 1px 1px 20px #012290f7,
     1px 1px 40px #0053b8f7,
@@ -46,18 +65,18 @@
     0 0 40px #0ef;
 }
 
-.services-list div i {
+.skill-list div i {
     font-size: 50px;
     margin-bottom: 30px;
 }
 
-.services-list div h2 {
+.skill-list div h2 {
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
 }
 
-.services-list div a {
+.skill-list div a {
     text-decoration: none;
     color: #000000;
     font-size: 12px;

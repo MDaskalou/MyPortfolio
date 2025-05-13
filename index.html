@@ -7,9 +7,12 @@
     <title>MyPortfolio</title>
     <link rel="stylesheet" href="CSS/main.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300&display=swap"
-          rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 
 </head>
 
@@ -20,7 +23,8 @@
     <nav class="navbar">
         <a href="#home" style="--i:1" class="active">Home</a>
         <a href="#about" style="--i:2">About</a>
-        <a href="#Skills" style="--i:3">Skills</a>
+        <a href="#skills" style="--i:3">Technical Skills</a>
+        <a href="#professional-skills" style="--i:3">Professional Skills</a>
         <a href="#portfolio" style="--i:4">Portfolio</a>
         <a href="#contact" style="--i:5">Contact</a>
 
@@ -78,217 +82,160 @@
         </div>
     </section>
 
-    <section>
-        <div class="services" id="services">
+    <section class="skills" id="skills">
+        <h2 class="sub-title">My Technical <span>Skills</span></h2>
+        <div class="container">
+            <div class="skill-list">
 
-            <div class="container">
-                <h1 class="sub-title"> My <span> Services</span></h1>
-
-                <div class="services-list">
-                    <div>
-                        <i class='bx bx-code-curly' style='color:#00eeff'></i>
-                        <h2>C# .Net</h2>
-                        <p>I have a solid foundation in C# and the .NET ecosystem, gained through both structured
-                            coursework and hands-on project experience.
-                            I'm comfortable building object-oriented applications using C#, and I've worked with ASP.NET
-                            Core to develop web APIs
-                            and backend systems. My skills include working with Entity Framework Core for database
-                            access, using LINQ for efficient data manipulation,
-                            and applying best practices such as separation of concerns and clean architecture. I’m also
-                            familiar with dependency injection, middleware configuration, and RESTful service design. As
-                            I continue to grow as a developer,
-                            I aim to deepen my understanding of scalable backend solutions and further explore .NET
-                            technologies like Blazor and MAUI.
-                            <a href="#" class="read"> Learn more </a>
-                        </p>
-                    </div>
-
-                    <div>
-                        <i class='bx bxl-react' style='color:#00eeff'></i>
-                        <h2>React</h2>
-                        <p>On the frontend, I use React to build responsive and dynamic user interfaces. I have
-                            experience working with functional components,
-                            hooks such as useState and useEffect, and managing component state effectively. I'm familiar
-                            with JSX, conditional rendering,
-                            and handling events. I’ve also used React Router for navigation and have integrated REST
-                            APIs to connect frontend interfaces with backend services, providing a seamless user
-                            experience.
-                            <a href="#" class="read"> Learn more </a>
-                        </p>
-                    </div>
-
-                    <div>
-                        <i class=""></i>
-                        <h2>Entity Framework Core</h2>
-                        <p>I use Entity Framework Core as my primary Object-Relational Mapper (ORM) in .NET
-                            applications. I’m confident in using Code First and Database-First approaches, setting up
-                            DbContext, configuring relationships between entities,
-                            and managing migrations. I regularly work with LINQ to perform complex data operations in a
-                            clean, readable way, and I understand
-                            how EF Core abstracts the database layer while still giving control when needed.
-                            <a href="#" class="read"> Learn more </a>
-                        </p>
-                    </div>
-
-                    <div>
-
-                        <i class='bx bxs-data' style='color:#00eeff'></i>
-                        <h2>SQL</h2>
-                        <p>I have hands-on experience working with SQL and relational databases, particularly in
-                            designing, querying, and managing data using
-                            SQL Server. I'm proficient in writing efficient queries, joins, subqueries, and stored
-                            procedures to retrieve and manipulate
-                            data. I've worked with database normalization, indexing strategies,
-                            and understand how to structure data to ensure both performance and integrity in backend
-                            systems.
-                            <a href="#" class="read"> Learn more </a>
-                        </p>
-                    </div>
-
+                <div>
+                    <i class='bx bxl-html5' style='color:#e34c26'></i>
+                    <h2>HTML</h2>
+                    <p>- Semantic structure<br>- Forms & Inputs<br>- Accessibility</p>
                 </div>
 
-            </div>
-        </div>
-
-    </section>
-
-    <h1 class="sub-title">My <span>Skills</span></h1>
-
-    <section>
-        <div class="container1" id="Skills">
-            <h1 class="heading1">Technical Skills</h1>
-
-            <div class="Technical-bars">
-                <div class="bar"><i class='bx bxl-html5' style='color:#E34C26'></i>
-                    <div class="info"><span>HTML</span></div>
-                    <div class="progress-line html"><span></span></div>
-                </div>
-            </div>
-
-            <div class="Technical-bars">
-                <div class="bar"><i class='bx bxl-css3' style='color:#264DE4'></i>
-                    <div class="info"><span>CSS</span></div>
-                    <div class="progress-line css"><span></span></div>
-                </div>
-            </div>
-
-            <div class="Technical-bars">
-                <div class="bar"><i class='bx bxl-javascript' style='color:#F0DB4F'></i>
-                    <div class="info"><span>JavaScript</span></div>
-                    <div class="progress-line javascript"><span></span></div>
-                </div>
-            </div>
-
-            <div class="Technical-bars">
-                <div class="bar"><i class='bx bxl-' style='color:#00eeff'></i>
-                    <div class="info"><span>C#.Net</span></div>
-                    <div class="progress-line c#.net"><span></span></div>
-                </div>
-            </div>
-
-            <div class="Technical-bars">
-                <div class="bar"><i class='bx bxl-github' style='color:#ffffff'></i>
-                    <div class="info"><span>Github</span></div>
-                    <div class="progress-line github"><span></span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="Technical-bars">
-                <div class="bar"><i class='bx bxl-git' style='color:#F1502F'></i>
-                    <div class="info"><span>Git</span></div>
-                    <div class="progress-line git"><span></span></div>
-                </div>
-            </div>
-
-            <div class="Technical-bars">
-                <div class="bar"><i class='bx bxl-react' style='color:#61DAFB'></i>
-                    <div class="info"><span>React</span></div>
-                    <div class="progress-line c#.net"><span></span></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="container1">
-            <h1 class="heading1"> Professional Skills</h1>
-            <div class="radial-bars">
-
-                <div class="radial-bar">
-                    <svg viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
-                    </svg>
-                    <div class="percentage">90%</div>
-                    <div class="text">Creativity</div>
+                <div>
+                    <i class='bx bxl-css3' style='color:#264de4'></i>
+                    <h2>CSS</h2>
+                    <p>- Flexbox & Grid<br>- Animations<br>- Responsive Design</p>
                 </div>
 
-                <div class="radial-bar">
-                    <svg viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path path-2" cx="100" cy="100" r="80"></circle>
-                    </svg>
-                    <div class="percentage">90%</div>
-                    <div class="text">Communication</div>
+                <div>
+                    <i class='bx bxl-javascript' style='color:#f0db4f'></i>
+                    <h2>JavaScript</h2>
+                    <p>- DOM Manipulation<br>- Events<br>- Functions & Logic</p>
                 </div>
 
-                <div class="radial-bar">
-                    <svg viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path path-3" cx="100" cy="100" r="80"></circle>
-                    </svg>
-                    <div class="percentage">90%</div>
-                    <div class="text">Problem Solving</div>
+                <div>
+                    <i class='bx bxl-react' style='color:#61DBFB'></i>
+                    <h2>React</h2>
+                    <p>- Components<br>- Props & State<br>- useEffect & Hooks</p>
                 </div>
 
-                <div class="radial-bar">
-                    <svg viewBox="0 0 200 200">
-                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                        <circle class="path path-4" cx="100" cy="100" r="80"></circle>
-                    </svg>
-                    <div class="percentage">90%</div>
-                    <div class="text">Teamwork</div>
+                <div>
+                    <i class='bx bx-code-curly' style='color:#9B4F96'></i>
+                    <h2>C# / .NET</h2>
+                    <p>- RESTful APIs<br>- OOP & MVC<br>- Authentication</p>
                 </div>
+
+                <div>
+                    <i class='bx bxs-data' style='color:#00758F'></i>
+                    <h2>SQL</h2>
+                    <p>- Queries & Joins<br>- CRUD operations<br>- Relationships</p>
+                </div>
+
+                <div>
+                    <i class='bx bxl-git' style='color:#F1502F'></i>
+                    <h2>Git</h2>
+                    <p>- Branching<br>- Merging<br>- Conflict handling</p>
+                </div>
+
+                <div>
+                    <i class='bx bxl-github' style='color:#ffffff'></i>
+                    <h2>GitHub</h2>
+                    <p>- Repositories<br>- Pull Requests<br>- GitHub Pages</p>
+                </div>
+
+                <div>
+                    <i class='bx bx-layer' style='color:#512BD4 '></i>
+                    <h2>Entity Framework</h2>
+                    <p>- Code First<br>- Migrations<br>- DbContext config</p>
+                </div>
+
             </div>
         </div>
     </section>
-    
+
+
+    <section class="professional-skills" id="professional-skills">
+        <h2 class="sub-title">Professional <span>Skills</span></h2>
+        <div class="professional-container">
+            <div class="professional-card">
+                <i class='bx bx-brain' style='color:#ff6b6b; font-size: 40px;'></i>
+                <h3>Problem Solving</h3>
+                <p>I have a strong ability to identify the root of complex issues and work through logical, 
+                    evidence-based solutions. I enjoy tackling challenges that require creativity and analytical thinking.</p>
+            </div>
+
+            <div class="professional-card">
+                <i class='bx bx-conversation' style='color:#4dd599; font-size: 40px;'></i>
+                <h3>Communication</h3>
+                <p>Clear and concise communication is a cornerstone in my work. I adapt my communication style to different 
+                    audiences and ensure everyone is aligned and informed.</p>
+            </div>
+
+            <div class="professional-card">
+                <i class='bx bx-group' style='color:#fcbf49; font-size: 40px;'></i>
+                <h3>Teamwork</h3>
+                <p>I work collaboratively in cross-functional teams, sharing knowledge and supporting colleagues.
+                    I believe strong teams are built on mutual respect and shared goals.</p>
+            </div>
+
+            <div class="professional-card">
+                <i class='bx bx-compass' style='color:#3f8efc; font-size: 40px;'></i>
+                <h3>Leadership</h3>
+                <p>I take initiative, guide projects, and help teammates grow by providing feedback and support. 
+                    Leadership for me is about responsibility and vision, not just position.</p>
+            </div>
+
+            <div class="professional-card">
+                <i class='bx bx-refresh' style='color:#bd7be2; font-size: 40px;'></i>
+                <h3>Adaptability</h3>
+                <p>I embrace change and quickly adjust to new tools, processes, or environments. 
+                    My flexible mindset helps me stay resilient in fast-paced settings.</p>
+            </div>
+
+            <div class="professional-card">
+                <i class='bx bx-target-lock' style='color:#f8961e; font-size: 40px;'></i>
+                <h3>Time Management</h3>
+                <p>I prioritize effectively, balance multiple projects, and deliver results on time. 
+                    My focus on planning and consistency helps maintain productivity.</p>
+            </div>
+        </div>
+    </section>
+
+
+
     <section>
         <div id="portfolio" class="project-section">
             <div class="main-text">
                 <h2>Latest <span>Project</span></h2>
-                
-                <div class="portfolio-content">
-                    <div class="row">
-                        <img src="img/MyFirstWebsite.png" alt="portfolio image">
-                        <div class="layer">
-                            <h5>My First Website</h5>
-                            <p>One year ago, I began my studies to become a software developer. Although our main focus is backend development
-                                with C# and .NET, we've also had the opportunity to learn frontend technologies. 
-                                What you see here is the very first website I've ever created — and it's a project I'm truly proud of.</p>
-                            
-                            <a href="https://github.com/MDaskalou/MyPortfolio"><i class='bx bx-link-external' style="color: aliceblue;"></i> </a>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <img src="img/BookingSystemSA.png" alt="portfolio image">
-                        <div class="layer">
-                            <h5>Booking System for a Hospital</h5>
-                            <p>This is the biggest project I'm working with so far. The purpose of this system is to create 
-                                an efficient booking system for departments within the Sahlgrenska hospital in Gothenburg. 
-                                The main goal is to reduce the need for nurses to call the department every time they need to make a booking,
-                                and instead allow them to use this system.
-
-                                It was a large-scale project where I learned a lot — including authentication, 
-                                MediatR, controllers, services, APIs, and much more.</p>
-
-                            <a href="https://github.com/MDaskalou/BookingSystemSA"><i class='bx bx-link-external' style="color: aliceblue;"></i> </a>
-                        </div>
-                    </div>
-                </div>
-                
             </div>
-        
+
+            <div class="swiper portfolio-swiper">
+                    <div class="swiper-wrapper">
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <div class="row">
+                                <img src="img/MyFirstWebsite.png" alt="portfolio image">
+                                <div class="layer">
+                                    <h5>My First Website</h5>
+                                    <p>One year ago, I began my studies...</p>
+                                    <a href="https://github.com/MDaskalou/MyPortfolio">
+                                        <i class='bx bx-link-external' style="color: aliceblue;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                            <div class="row">
+                                <img src="img/BookingSystemSA.png" alt="portfolio image">
+                                <div class="layer">
+                                    <h5>Booking System for a Hospital</h5>
+                                    <p>This is the biggest project I'm working with so far...</p>
+                                    <a href="https://github.com/MDaskalou/BookingSystemSA">
+                                        <i class='bx bx-link-external' style="color: aliceblue;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Optional navigation arrows -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
         </div>
             
     </section>
@@ -334,7 +281,7 @@
 
 
     </section>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
 
 </main>

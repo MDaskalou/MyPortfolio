@@ -1,0 +1,64 @@
+﻿#professional-skills {
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.professional-skills {
+    padding: 80px 20px;
+    background-color: #081b29;
+    color: aliceblue;
+    text-align: center;
+}
+
+.professional-skills .sub-title {
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+.professional-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.professional-card {
+    background: transparent;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px #012290f7,
+    1px 1px 40px #0053b8f7;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.professional-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px #0ef, 0 0 30px #0ef;
+}
+
+.professional-card i {
+    margin-bottom: 15px;
+    display: block;
+}
+
+.professional-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #0ef;
+}
+
+.professional-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #e0e0e0;
+}

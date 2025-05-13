@@ -29,3 +29,16 @@ document.addEventListener("DOMContentLoaded", () => {
         observer.observe(section);
     });
 });
+document.addEventListener("DOMContentLoaded", () => {
+    const swiper = new Swiper(".portfolio-swiper", {
+        effect: "slide",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+});
