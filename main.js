@@ -1,4 +1,4 @@
-﻿
+﻿// === TYPED TEXT EFFECT ===
 window.onload = function () {
     var typed = new Typed('.text', {
         strings: ["Frontend Developer", "Backend Developer", "Dancer"],
@@ -9,11 +9,9 @@ window.onload = function () {
     });
 };
 
+// === FADE-IN SECTION EFFECT ===
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("✅ Script is running");
-
     const sections = document.querySelectorAll("section");
-
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -29,6 +27,8 @@ document.addEventListener("DOMContentLoaded", () => {
         observer.observe(section);
     });
 });
+
+// === SWIPER INIT FOR PORTFOLIO ===
 document.addEventListener("DOMContentLoaded", () => {
     const swiper = new Swiper(".portfolio-swiper", {
         effect: "slide",
@@ -42,16 +42,24 @@ document.addEventListener("DOMContentLoaded", () => {
         },
     });
 });
-document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-        document.getElementById('navLinks').classList.remove('open');
+
+// === HAMBURGER MENU TOGGLE ===
+document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.querySelector(".hamburger");
+    const nav = document.getElementById("navLinks");
+
+    hamburger.addEventListener("click", () => {
+        nav.classList.toggle("open");
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+        link.addEventListener("click", () => {
+            nav.classList.remove("open");
+        });
     });
 });
 
-function toggleMenu() {
-    const nav = document.getElementById('navLinks');
-    nav.classList.toggle('open');
-}
+// === SCROLL TO TOP BUTTON ===
 document.addEventListener("DOMContentLoaded", () => {
     const scrollBtn = document.getElementById("scrollTopBtn");
 
@@ -61,20 +69,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
     scrollBtn.addEventListener("click", () => {
         window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-
-    // Hamburger toggle
-    const hamburger = document.querySelector(".hamburger");
-    const nav = document.getElementById("navLinks");
-
-    hamburger.addEventListener("click", () => {
-        nav.classList.toggle("open");
-    });
-
-    // Close menu on link click (optional)
-    document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
-            nav.classList.remove('open');
-        });
     });
 });

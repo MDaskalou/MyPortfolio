@@ -1,7 +1,11 @@
-﻿.main-text {
+﻿#portfolio{
+    margin-top: 10px;
+}
+
+.main-text {
     text-align: center;
-    padding-top: 120px;
-    margin-top: 200px;
+    padding-top: 40px;
+    margin-top: 0px;
     margin-bottom: 60px;
 }
 
@@ -44,7 +48,7 @@
 }
 
 .swiper-slide {
-    width: auto !important;
+    width: 600px !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,6 +60,7 @@
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
+    max-height: 400px;
     /* Resten of unchanged row styling */
 }
 .row img {

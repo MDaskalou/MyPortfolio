@@ -203,8 +203,7 @@
     }
 
     .logo {
-        font-size: 22px;
-        margin-bottom: 10px;
+       display: none;
     }
 
     .navbar {
@@ -231,23 +230,19 @@
 }
 @media (max-width: 768px) {
     .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
         position: absolute;
         top: 60px;
         left: 0;
         width: 100%;
         background-color: rgba(0, 0, 0, 0.95);
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease-in-out;
         z-index: 999;
-        display: none;
+        padding: 20px 0;
     }
 
     .nav-links.open {
-        max-height: 500px;
         display: flex;
     }
 
