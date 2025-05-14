@@ -1,73 +1,51 @@
 ﻿@media (max-width: 768px) {
-    /* HEADER */
-    .header {
-        flex-direction: column;
-        padding: 15px 5%;
-        text-align: center;
-    }
-
-    .logo {
-        margin-bottom: 10px;
-    }
-
     .navbar {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
+        flex-direction: column;
+        gap: 15px;
     }
 
-    .navbar a {
-        font-size: 18px;
-        margin: 10px;
-    }
-
-    /* HOME */
     .home {
         flex-direction: column;
-        height: auto;
-        padding: 60px 5%;
         text-align: center;
-    }
-
-    .home-content {
-        max-width: 100%;
-    }
-
-    .home-content h1 {
-        font-size: 40px;
-    }
-
-    .home-content h3 {
-        font-size: 24px;
-    }
-
-    .home-content p {
-        font-size: 16px;
+        padding: 40px 5%;
     }
 
     .profile-img img {
         width: 250px;
         height: 250px;
-        margin-top: 20px;
     }
 
-    /* ABOUT */
     .about-wrapper {
         flex-direction: column;
+        align-items: center;
         padding: 20px;
     }
 
     .about-content {
+        padding: 0;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .about-wrapper {
+        flex-direction: column;
         padding: 20px;
         text-align: center;
     }
 
+    .about-content {
+        padding: 20px 10px;
+        gap: 10px;
+    }
+
     .about-content h2 {
-        font-size: 40px;
+        font-size: 36px;
     }
 
     .about-content h4 {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     .about-content p {
@@ -82,51 +60,66 @@
         width: 250px;
         height: 250px;
     }
+}
 
-    /* SERVICES */
-    .services-list {
-        grid-template-columns: 1fr;
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+        height: auto;
     }
 
-    /* SKILLS */
-    .container1 {
-        padding: 30px;
-        margin-left: 0;
-        width: 100%;
+    .home-content {
+        max-width: 100%;
+        margin-bottom: 30px;
     }
 
-    .heading1 {
-        font-size: 28px;
+    .home-content h1 {
+        font-size: 40px;
     }
 
-    .bar {
+    .home-content h3 {
+        font-size: 24px;
+    }
+
+    .home-content p {
         font-size: 16px;
     }
 
-    /* PORTFOLIO */
-    .main-text h2 {
-        font-size: 36px;
+    .home-sci {
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
-    .portfolio-content {
-        grid-template-columns: 1fr;
-        padding: 0 10px;
+    .btn-box {
+        margin-top: 20px;
     }
 
-    /* CONTACT */
+    .profile-img img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
     .contact {
         grid-template-columns: 1fr;
+        gap: 2rem;
         padding: 20px;
     }
 
     .contact-text h2 {
-        font-size: 36px;
+        font-size: 50px;
     }
 
-    .contact-text p,
     .contact-text h4 {
-        text-align: center;
+        font-size: 18px;
+    }
+
+    .contact-text p {
         font-size: 16px;
+        text-align: center;
     }
 
     .contact-icon {
@@ -137,4 +130,103 @@
     .contact-form {
         max-width: 100%;
     }
+
+    .contact-form input,
+    .contact-form textarea {
+        font-size: 14px;
+    }
 }
+@media (max-width: 768px) {
+    .professional-skills .sub-title {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    .professional-card {
+        padding: 20px;
+    }
+
+    .professional-card h3 {
+        font-size: 20px;
+    }
+
+    .professional-card p {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .skill-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 kolumner på surfplattor */
+    }
+}
+
+@media (max-width: 600px) {
+    .sub-title {
+        font-size: 40px;
+        padding-bottom: 30px;
+    }
+
+    .sub-title span {
+        font-size: 40px;
+    }
+
+    .skill-list {
+        grid-template-columns: 1fr; /* 1 kolumn på mobil */
+        gap: 20px;
+    }
+
+    .skill-list div {
+        padding: 30px;
+    }
+
+    .skill-list div h2 {
+        font-size: 24px;
+    }
+
+    .skill-list div i {
+        font-size: 40px;
+    }
+
+    #skills {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 5%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .slideLeft,
+    .slideRight,
+    .slideTop,
+    .slideBottom {
+        animation: none;
+    }
+}
+
