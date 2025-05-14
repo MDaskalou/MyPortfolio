@@ -255,3 +255,25 @@
         align-items: flex-start;
     }
 }
+
+@media (max-width: 768px) {
+    .swiper-slide {
+        width: 90% !important;
+    }
+
+    .row {
+        max-width: 100%;
+        max-height: none;
+    }
+
+    .row img {
+        max-height: none;
+        height: auto;
+    }
+
+    .portfolio-swiper {
+        transform: none;
+        padding: 0;
+    }
+}
+

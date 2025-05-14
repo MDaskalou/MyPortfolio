@@ -35,7 +35,7 @@
     padding: 0 20px;
     margin: 0 auto;
     max-width: 1200px;
-    transform: translateX(-5%); /* flytta swiper lite åt vänster */
+    transform: none; /* flytta swiper lite åt vänster */
 
 }
 
