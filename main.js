@@ -52,3 +52,29 @@ function toggleMenu() {
     const nav = document.getElementById('navLinks');
     nav.classList.toggle('open');
 }
+document.addEventListener("DOMContentLoaded", () => {
+    const scrollBtn = document.getElementById("scrollTopBtn");
+
+    window.addEventListener("scroll", () => {
+        scrollBtn.style.display = window.scrollY > 300 ? "block" : "none";
+    });
+
+    scrollBtn.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+
+    // Hamburger toggle
+    const hamburger = document.querySelector(".hamburger");
+    const nav = document.getElementById("navLinks");
+
+    hamburger.addEventListener("click", () => {
+        nav.classList.toggle("open");
+    });
+
+    // Close menu on link click (optional)
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            nav.classList.remove('open');
+        });
+    });
+});

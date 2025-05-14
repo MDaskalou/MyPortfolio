@@ -243,10 +243,12 @@
         overflow: hidden;
         transition: max-height 0.3s ease-in-out;
         z-index: 999;
+        display: none;
     }
 
     .nav-links.open {
         max-height: 500px;
+        display: flex;
     }
 
     .hamburger {

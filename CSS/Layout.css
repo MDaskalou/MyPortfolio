@@ -39,3 +39,24 @@
 .nav-links a:hover {
     color: #00eeff;
 }
+
+#scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    background-color: #0ef;
+    color: #081b29;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #0ef;
+}
+
+
+#scrollTopBtn:hover {
+    background-color: #00cfdc;
+}
