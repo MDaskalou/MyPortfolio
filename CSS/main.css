@@ -4,7 +4,6 @@
 
 
 @import url('./Base.css');
-@import url('./Layout.css');
 @import url('./home.css');
 @import url('./about.css');
 @import url('./skill.css');
@@ -13,3 +12,5 @@
 @import url('./portfolio.css');
 @import url('./contact.css');
 @import url('./responsive.css');
+@import url('./hamburger.css');
+@import url('./Layout.css');
