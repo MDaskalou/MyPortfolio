@@ -258,11 +258,12 @@
 
 @media (max-width: 768px) {
     .swiper-slide {
-        width: 90% !important;
+        width: 100% !important;
+        transform: none;
     }
 
     .row {
-        max-width: 100%;
+        max-width: 90%;
         max-height: none;
     }
 
@@ -273,7 +274,7 @@
 
     .portfolio-swiper {
         transform: none;
-        padding: 0;
+        padding: 0 10px;
     }
 }
 

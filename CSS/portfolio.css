@@ -35,7 +35,7 @@
     padding: 0 20px;
     margin: 0 auto;
     max-width: 1200px;
-    transform: none; /* flytta swiper lite åt vänster */
+    transform: translateX(-10%); /* flytta swiper lite åt vänster */
 
 }
 
@@ -48,7 +48,7 @@
 }
 
 .swiper-slide {
-    width: 600px !important;
+    width: 100% !important;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +60,7 @@
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
-    max-height: 400px;
+    position: relative;
     /* Resten of unchanged row styling */
 }
 .row img {
@@ -71,6 +71,7 @@
     object-fit: cover;
     display: block;
     transition: transform 0.5s;
+    align-items: center;
 
 }
 
