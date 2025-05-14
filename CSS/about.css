@@ -20,6 +20,7 @@
 
 .about-content h2 {
     font-size: 60px;
+    color: #ffffff;
 }
 
 .about-content h2 span {
@@ -29,7 +30,7 @@
 .about-content h4 {
     font-size: 29px;
     font-weight: 600;
-    color: antiquewhite;
+    color: #ffffff;
     line-height: 1.7;
     margin: 15px 0 30px;
 }
