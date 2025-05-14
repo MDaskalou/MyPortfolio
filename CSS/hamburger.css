@@ -12,28 +12,3 @@
     margin: 4px 0;
     transition: 0.4s;
 }
-
-/* === RESPONSIVE === */
-@media (max-width: 768px) {
-    .hamburger {
-        display: flex;
-    }
-
-    .nav-links {
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.9);
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease-in-out;
-    }
-
-    .nav-links.open {
-        max-height: 500px;
-    }
-}
