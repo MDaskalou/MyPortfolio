@@ -50,12 +50,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const nav = document.getElementById("navLinks");
 
     hamburger.addEventListener("click", () => {
-        nav.classList.toggle("open");
+        nav.classList.toggle("active");
+        hamburger.classList.toggle("active");
     });
 
     document.querySelectorAll(".nav-links a").forEach(link => {
         link.addEventListener("click", () => {
-            nav.classList.remove("open");
+            nav.classList.remove("active");
+            hamburger.classList.remove("active");
         });
     });
 });
