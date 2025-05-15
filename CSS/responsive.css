@@ -137,6 +137,10 @@
     }
 }
 @media (max-width: 768px) {
+    .professional-container {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
     .professional-skills .sub-title {
         font-size: 40px;
         margin-bottom: 30px;

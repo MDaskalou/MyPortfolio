@@ -33,9 +33,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const swiper = new Swiper(".portfolio-swiper", {
         effect: "slide",
         grabCursor: true,
-        centeredSlides: true,
-        slidesPerView: "auto",
+        centeredSlides: false,
+        slidesPerView: 1,
         loop: true,
+        spaceBetween: 30, // lägg lite luft mellan slides
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",

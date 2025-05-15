@@ -32,12 +32,10 @@
 
 .portfolio-swiper {
     width: 100%;
-    padding: 0 20px;
+    max-width: 600px;
     margin: 0 auto;
-    max-width: 1200px;
-    transform: translateX(-10%); /* flytta swiper lite åt vänster */
-
 }
+
 
 .swiper-wrapper {
     display: flex;
@@ -49,12 +47,16 @@
 
 .swiper-slide {
     width: 100% !important;
+    max-width: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 10px; /* utrymme mellan slides */
     box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
 }
+
+
 
 .row {
     width: 100%;
